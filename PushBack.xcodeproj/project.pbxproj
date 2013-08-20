@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9008CA917C1665100A85121 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = C9008CA817C1665100A85121 /* UIImage+Alpha.m */; };
+		C9008CB117C17DB000A85121 /* Photos.png in Resources */ = {isa = PBXBuildFile; fileRef = C9008CB017C17DB000A85121 /* Photos.png */; };
+		C9008CD117C1857F00A85121 /* Alki_Beach_Sunrise.png in Resources */ = {isa = PBXBuildFile; fileRef = C9008CC717C1857F00A85121 /* Alki_Beach_Sunrise.png */; };
+		C9008CD217C1857F00A85121 /* Blue_Mountain.png in Resources */ = {isa = PBXBuildFile; fileRef = C9008CC817C1857F00A85121 /* Blue_Mountain.png */; };
+		C9008CD317C1857F00A85121 /* Emptiness.png in Resources */ = {isa = PBXBuildFile; fileRef = C9008CC917C1857F00A85121 /* Emptiness.png */; };
+		C9008CD417C1857F00A85121 /* Fire_Beach.png in Resources */ = {isa = PBXBuildFile; fileRef = C9008CCA17C1857F00A85121 /* Fire_Beach.png */; };
+		C9008CD517C1857F00A85121 /* Lake_Murten.png in Resources */ = {isa = PBXBuildFile; fileRef = C9008CCB17C1857F00A85121 /* Lake_Murten.png */; };
+		C9008CD617C1857F00A85121 /* Lastrays.png in Resources */ = {isa = PBXBuildFile; fileRef = C9008CCC17C1857F00A85121 /* Lastrays.png */; };
+		C9008CD717C1857F00A85121 /* Maui_Pastel.png in Resources */ = {isa = PBXBuildFile; fileRef = C9008CCD17C1857F00A85121 /* Maui_Pastel.png */; };
+		C9008CD917C1857F00A85121 /* Morning_Dew_Drop.png in Resources */ = {isa = PBXBuildFile; fileRef = C9008CCF17C1857F00A85121 /* Morning_Dew_Drop.png */; };
+		C9008CDA17C1857F00A85121 /* Purple.png in Resources */ = {isa = PBXBuildFile; fileRef = C9008CD017C1857F00A85121 /* Purple.png */; };
+		C9008CDE17C1B8A400A85121 /* UIImage+Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = C9008CDD17C1B8A400A85121 /* UIImage+Mask.m */; };
+		C9662C2317C1418800B4C8F4 /* Photos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9662C2217C1418800B4C8F4 /* Photos@2x.png */; };
 		C9D7E26E17C05056002466D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D7E26D17C05056002466D5 /* Foundation.framework */; };
 		C9D7E27017C05056002466D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D7E26F17C05056002466D5 /* CoreGraphics.framework */; };
 		C9D7E27217C05056002466D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D7E27117C05056002466D5 /* UIKit.framework */; };
@@ -21,6 +34,7 @@
 		C9D7E28F17C05056002466D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D7E27117C05056002466D5 /* UIKit.framework */; };
 		C9D7E29717C05056002466D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9D7E29517C05056002466D5 /* InfoPlist.strings */; };
 		C9D7E29917C05056002466D5 /* PushBackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D7E29817C05056002466D5 /* PushBackTests.m */; };
+		C9D7E2A417C05065002466D5 /* MTZPushBackControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D7E2A317C05065002466D5 /* MTZPushBackControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +48,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9008CA717C1664C00A85121 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		C9008CA817C1665100A85121 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		C9008CB017C17DB000A85121 /* Photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Photos.png; sourceTree = "<group>"; };
+		C9008CC717C1857F00A85121 /* Alki_Beach_Sunrise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Alki_Beach_Sunrise.png; path = Wallpapers/Alki_Beach_Sunrise.png; sourceTree = "<group>"; };
+		C9008CC817C1857F00A85121 /* Blue_Mountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Blue_Mountain.png; path = Wallpapers/Blue_Mountain.png; sourceTree = "<group>"; };
+		C9008CC917C1857F00A85121 /* Emptiness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Emptiness.png; path = Wallpapers/Emptiness.png; sourceTree = "<group>"; };
+		C9008CCA17C1857F00A85121 /* Fire_Beach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fire_Beach.png; path = Wallpapers/Fire_Beach.png; sourceTree = "<group>"; };
+		C9008CCB17C1857F00A85121 /* Lake_Murten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lake_Murten.png; path = Wallpapers/Lake_Murten.png; sourceTree = "<group>"; };
+		C9008CCC17C1857F00A85121 /* Lastrays.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lastrays.png; path = Wallpapers/Lastrays.png; sourceTree = "<group>"; };
+		C9008CCD17C1857F00A85121 /* Maui_Pastel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maui_Pastel.png; path = Wallpapers/Maui_Pastel.png; sourceTree = "<group>"; };
+		C9008CCF17C1857F00A85121 /* Morning_Dew_Drop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Morning_Dew_Drop.png; path = Wallpapers/Morning_Dew_Drop.png; sourceTree = "<group>"; };
+		C9008CD017C1857F00A85121 /* Purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Purple.png; path = Wallpapers/Purple.png; sourceTree = "<group>"; };
+		C9008CDC17C1B8A400A85121 /* UIImage+Mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Mask.h"; sourceTree = "<group>"; };
+		C9008CDD17C1B8A400A85121 /* UIImage+Mask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Mask.m"; sourceTree = "<group>"; };
+		C9662C2217C1418800B4C8F4 /* Photos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Photos@2x.png"; sourceTree = "<group>"; };
 		C9D7E26A17C05056002466D5 /* PushBack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushBack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D7E26D17C05056002466D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9D7E26F17C05056002466D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +82,8 @@
 		C9D7E29417C05056002466D5 /* PushBackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PushBackTests-Info.plist"; sourceTree = "<group>"; };
 		C9D7E29617C05056002466D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9D7E29817C05056002466D5 /* PushBackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushBackTests.m; sourceTree = "<group>"; };
+		C9D7E2A217C05065002466D5 /* MTZPushBackControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTZPushBackControl.h; sourceTree = "<group>"; };
+		C9D7E2A317C05065002466D5 /* MTZPushBackControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTZPushBackControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +110,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9008CDB17C1859100A85121 /* Wallpapers */ = {
+			isa = PBXGroup;
+			children = (
+				C9008CC717C1857F00A85121 /* Alki_Beach_Sunrise.png */,
+				C9008CC817C1857F00A85121 /* Blue_Mountain.png */,
+				C9008CC917C1857F00A85121 /* Emptiness.png */,
+				C9008CCA17C1857F00A85121 /* Fire_Beach.png */,
+				C9008CCB17C1857F00A85121 /* Lake_Murten.png */,
+				C9008CCC17C1857F00A85121 /* Lastrays.png */,
+				C9008CCD17C1857F00A85121 /* Maui_Pastel.png */,
+				C9008CCF17C1857F00A85121 /* Morning_Dew_Drop.png */,
+				C9008CD017C1857F00A85121 /* Purple.png */,
+			);
+			name = Wallpapers;
+			sourceTree = "<group>";
+		};
 		C9D7E26117C05056002466D5 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +164,15 @@
 				C9D7E27F17C05056002466D5 /* Main.storyboard */,
 				C9D7E28217C05056002466D5 /* MTZViewController.h */,
 				C9D7E28317C05056002466D5 /* MTZViewController.m */,
+				C9D7E2A217C05065002466D5 /* MTZPushBackControl.h */,
+				C9D7E2A317C05065002466D5 /* MTZPushBackControl.m */,
+				C9008CA717C1664C00A85121 /* UIImage+Alpha.h */,
+				C9008CA817C1665100A85121 /* UIImage+Alpha.m */,
+				C9008CDC17C1B8A400A85121 /* UIImage+Mask.h */,
+				C9008CDD17C1B8A400A85121 /* UIImage+Mask.m */,
+				C9008CB017C17DB000A85121 /* Photos.png */,
+				C9662C2217C1418800B4C8F4 /* Photos@2x.png */,
+				C9008CDB17C1859100A85121 /* Wallpapers */,
 				C9D7E28517C05056002466D5 /* Images.xcassets */,
 				C9D7E27417C05056002466D5 /* Supporting Files */,
 			);
@@ -200,6 +256,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Matt Zanchelli";
 				TargetAttributes = {
+					C9D7E26917C05056002466D5 = {
+						DevelopmentTeam = 3SZ7MS7NXC;
+					};
 					C9D7E28A17C05056002466D5 = {
 						TestTargetID = C9D7E26917C05056002466D5;
 					};
@@ -229,9 +288,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9008CD317C1857F00A85121 /* Emptiness.png in Resources */,
+				C9662C2317C1418800B4C8F4 /* Photos@2x.png in Resources */,
+				C9008CD217C1857F00A85121 /* Blue_Mountain.png in Resources */,
+				C9008CD617C1857F00A85121 /* Lastrays.png in Resources */,
+				C9008CD517C1857F00A85121 /* Lake_Murten.png in Resources */,
 				C9D7E28617C05056002466D5 /* Images.xcassets in Resources */,
+				C9008CDA17C1857F00A85121 /* Purple.png in Resources */,
+				C9008CD917C1857F00A85121 /* Morning_Dew_Drop.png in Resources */,
+				C9008CD717C1857F00A85121 /* Maui_Pastel.png in Resources */,
 				C9D7E27817C05056002466D5 /* InfoPlist.strings in Resources */,
 				C9D7E28117C05056002466D5 /* Main.storyboard in Resources */,
+				C9008CD117C1857F00A85121 /* Alki_Beach_Sunrise.png in Resources */,
+				C9008CB117C17DB000A85121 /* Photos.png in Resources */,
+				C9008CD417C1857F00A85121 /* Fire_Beach.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D7E2A417C05065002466D5 /* MTZPushBackControl.m in Sources */,
 				C9D7E27E17C05056002466D5 /* MTZAppDelegate.m in Sources */,
 				C9D7E27A17C05056002466D5 /* main.m in Sources */,
+				C9008CDE17C1B8A400A85121 /* UIImage+Mask.m in Sources */,
+				C9008CA917C1665100A85121 /* UIImage+Alpha.m in Sources */,
 				C9D7E28417C05056002466D5 /* MTZViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,10 +448,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushBack/PushBack-Prefix.pch";
 				INFOPLIST_FILE = "PushBack/PushBack-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -388,10 +464,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushBack/PushBack-Prefix.pch";
 				INFOPLIST_FILE = "PushBack/PushBack-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -455,6 +534,7 @@
 				C9D7E29E17C05056002466D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9D7E29F17C05056002466D5 /* Build configuration list for PBXNativeTarget "PushBackTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +543,7 @@
 				C9D7E2A117C05056002466D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

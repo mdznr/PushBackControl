@@ -13,6 +13,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+	[self.window setOpaque:NO];
+	[self.window setBackgroundColor:[UIColor clearColor]];
     return YES;
 }
 							
