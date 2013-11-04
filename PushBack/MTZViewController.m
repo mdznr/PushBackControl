@@ -7,10 +7,12 @@
 //
 
 #import "MTZViewController.h"
-#import "MTZPushBackControl.h"
+#import "MTZPushBackButton.h"
 
 #import "UIImage+Alpha.h"
 #import "UIImage+Mask.h"
+
+#define DOUBLE YES
 
 @interface MTZViewController ()
 
@@ -26,23 +28,33 @@
 	[self.view setBackgroundColor:[UIColor clearColor]];
 	[self.view setOpaque:NO];
 	
-	MTZPushBackControl *control = [[MTZPushBackControl alloc] init];
-	control.opaque = NO;
+	MTZPushBackButton *button = [[MTZPushBackButton alloc] init];
+	button.opaque = NO;
 //	[control setHighlightType:MTZPushBackControlTouchHighlightWholeControl];
 //	[control setHighlightColor:[UIColor colorWithWhite:0.0f alpha:0.25f]];
-	[self.view addSubview:control];
+	[self.view addSubview:button];
 	
-#warning move to better solution so they don't have to add transparent pixels themselves
-	UIImage *icon = [UIImage imageNamed:@"Photos"];
-	CGRect iconFrame = (CGRect){0,0,icon.size.width,icon.size.height};
-	UIBezierPath *round = [UIBezierPath bezierPathWithRoundedRect:iconFrame
-													 cornerRadius:12.0f];
+	UIImage *icon;
+	if ( DOUBLE ) {
+		icon = [UIImage imageNamed:@"DoublePhotos"];
+	} else {
+		icon = [UIImage imageNamed:@"Photos"];
+	}
+	CGRect iconFrame = (CGRect){0, 0, icon.size.width, icon.size.height};
+	UIBezierPath *round;
+	if ( DOUBLE ) {
+		round = [UIBezierPath bezierPathWithRoundedRect:iconFrame
+										   cornerRadius:24.0f];
+	} else {
+		round = [UIBezierPath bezierPathWithRoundedRect:iconFrame
+										   cornerRadius:12.0f];
+	}
 	icon = [icon maskedImageWithBezierPath:round];
+#warning move to better solution so they don't have to add transparent pixels themselves
 	icon = [icon transparentBorderImage:1.0f];
-	UIImageView *iv = [[UIImageView alloc] initWithImage:icon];
-	[control addSubview:iv];
-	[control setFrame:iv.frame];
-	[control setCenter:self.view.center];
+	[button setBackgroundImage:icon forState:UIControlStateNormal];
+	[button setFrame:iconFrame];
+	[button setCenter:self.view.center];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
