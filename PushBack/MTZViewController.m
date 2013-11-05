@@ -1,3 +1,4 @@
+
 //
 //  MTZViewController.m
 //  PushBack
@@ -12,7 +13,7 @@
 #import "UIImage+Alpha.h"
 #import "UIImage+Mask.h"
 
-#define DOUBLE YES
+#define SHOW_ICON_DOUBLE_SIZED YES
 
 @interface MTZViewController ()
 
@@ -34,21 +35,21 @@
 //	[control setHighlightColor:[UIColor colorWithWhite:0.0f alpha:0.25f]];
 	[self.view addSubview:button];
 	
-	UIImage *icon;
-	if ( DOUBLE ) {
-		icon = [UIImage imageNamed:@"DoublePhotos"];
-	} else {
-		icon = [UIImage imageNamed:@"Photos"];
-	}
+#if SHOW_ICON_DOUBLE_SIZED
+	UIImage *icon = [UIImage imageNamed:@"DoublePhotos"];
+#else
+	UIImage *icon = [UIImage imageNamed:@"Photos"];
+#endif
+
 	CGRect iconFrame = (CGRect){0, 0, icon.size.width, icon.size.height};
-	UIBezierPath *round;
-	if ( DOUBLE ) {
-		round = [UIBezierPath bezierPathWithRoundedRect:iconFrame
-										   cornerRadius:24.0f];
-	} else {
-		round = [UIBezierPath bezierPathWithRoundedRect:iconFrame
-										   cornerRadius:12.0f];
-	}
+#if SHOW_ICON_DOUBLE_SIZED
+	UIBezierPath *round = [UIBezierPath bezierPathWithRoundedRect:iconFrame
+													 cornerRadius:24.0f];
+#else
+	UIBezierPath *round = [UIBezierPath bezierPathWithRoundedRect:iconFrame
+													 cornerRadius:12.0f];
+#endif
+	
 	icon = [icon maskedImageWithBezierPath:round];
 #warning move to better solution so they don't have to add transparent pixels themselves
 	icon = [icon transparentBorderImage:1.0f];
