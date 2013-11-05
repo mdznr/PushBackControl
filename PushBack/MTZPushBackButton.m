@@ -51,7 +51,7 @@
 
 - (void)setup
 {
-	self.layer.zPosition = 10.0f;
+	self.layer.zPosition = 100.0f;
 	
 	_highlightView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
 	_highlightView.opaque = NO;
@@ -120,13 +120,15 @@
 	
 	CGPoint avgPoint = [self averagePointOfTouches:_myTouches];
 	
-	[UIView beginAnimations:nil context:nil];
-	[UIView setAnimationBeginsFromCurrentState:YES];
-	[UIView setAnimationCurve:UIViewAnimationCurveLinear];
-	[UIView setAnimationDuration:1.0f/60.0f]; // set to be accurate to how often refresh of touches is.
-	[self pushBackWithPoint:avgPoint];
-	[self highlightAtPoint:avgPoint]; // This should probably not be average point
-	[UIView commitAnimations];
+	[UIView animateWithDuration:1.0f/60.0f // Set to be accurate to how often refresh of touches is.
+						  delay:0.0f
+						options:UIViewAnimationOptionCurveLinear |
+	                            UIViewAnimationOptionBeginFromCurrentState
+					 animations:^{
+						 [self pushBackWithPoint:avgPoint];
+						 [self highlightAtPoint:avgPoint]; // This should probably not be average point
+					 }
+					 completion:^(BOOL finished) {}];
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
@@ -144,8 +146,6 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	NSLog(@"ENDED");
-	
 	[_myTouches minusSet:touches];
 	
 	if ( _myTouches.count ) {
@@ -207,11 +207,14 @@
 						options:UIViewAnimationOptionLayoutSubviews |
 	                            UIViewAnimationOptionAllowAnimatedContent |
 	                            UIViewAnimationOptionAllowUserInteraction
-					 animations:^(void){self.layer.transform = CATransform3DIdentity;}
+					 animations:^(void){
+						 self.layer.transform = CATransform3DIdentity;
+					 }
 					 completion:nil];
 }
 
-#pragma mark Hightlighting
+
+#pragma mark Highlighting
 
 - (void)setHighlightColor:(UIColor *)highlightColor
 {
@@ -226,6 +229,7 @@
 		case MTZPushBackButtonTouchHighlightTapArea:
 			_highlightView.frame = (CGRect){0,0,40,40};
 			_highlightView.autoresizingMask = UIViewAutoresizingNone;
+#warning highlightView should be circular and diffused
 			break;
 		case MTZPushBackButtonTouchHighlightWholeControl:
 			_highlightView.frame = self.frame;
@@ -242,10 +246,13 @@
 - (void)highlightAtPoint:(CGPoint)point
 {
 	[_highlightView removeFromSuperview];
+	
+#warning should addSubview: be only for non-none highlight types?
 	[self addSubview:_highlightView];
 	
 	switch ( _highlightType ) {
 		case MTZPushBackButtonTouchHighlightTapArea:
+#warning this looks goofy when appearing in an animation
 			_highlightView.center = point;
 		case MTZPushBackButtonTouchHighlightWholeControl:
 			_highlightView.hidden = NO;
