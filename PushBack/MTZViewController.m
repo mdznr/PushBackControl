@@ -31,8 +31,10 @@
 	
 	MTZPushBackButton *button = [[MTZPushBackButton alloc] init];
 	button.opaque = NO;
-//	[control setHighlightType:MTZPushBackControlTouchHighlightWholeControl];
-//	[control setHighlightColor:[UIColor colorWithWhite:0.0f alpha:0.25f]];
+//	[button setHighlightType:MTZPushBackButtonTouchHighlightTapArea];
+	[button setHighlightType:MTZPushBackButtonTouchHighlightWholeControl];
+#warning the highlight color not masked to bounds of icon
+	[button setHighlightColor:[UIColor colorWithWhite:0.0f alpha:0.25f]];
 	[self.view addSubview:button];
 	
 #if SHOW_ICON_DOUBLE_SIZED
