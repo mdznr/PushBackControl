@@ -13,7 +13,7 @@
 #import "UIImage+Alpha.h"
 #import "UIImage+Mask.h"
 
-#define SHOW_ICON_DOUBLE_SIZED YES
+#define SHOW_ICON_DOUBLE_SIZED 1
 
 @interface MTZViewController ()
 
