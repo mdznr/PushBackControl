@@ -21,6 +21,7 @@
 		C9008CDE17C1B8A400A85121 /* UIImage+Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = C9008CDD17C1B8A400A85121 /* UIImage+Mask.m */; };
 		C90763C317C3134100E85BB3 /* DoublePhotos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C90763C117C3134100E85BB3 /* DoublePhotos@2x.png */; };
 		C90763C417C3134100E85BB3 /* DoublePhotos.png in Resources */ = {isa = PBXBuildFile; fileRef = C90763C217C3134100E85BB3 /* DoublePhotos.png */; };
+		C926AF8A18EB9CA300747475 /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C926AF8918EB9CA300747475 /* wallpaper.jpg */; };
 		C9662C2317C1418800B4C8F4 /* Photos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9662C2217C1418800B4C8F4 /* Photos@2x.png */; };
 		C9D7E26E17C05056002466D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D7E26D17C05056002466D5 /* Foundation.framework */; };
 		C9D7E27017C05056002466D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D7E26F17C05056002466D5 /* CoreGraphics.framework */; };
@@ -66,6 +67,7 @@
 		C9008CDD17C1B8A400A85121 /* UIImage+Mask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Mask.m"; sourceTree = "<group>"; };
 		C90763C117C3134100E85BB3 /* DoublePhotos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DoublePhotos@2x.png"; sourceTree = "<group>"; };
 		C90763C217C3134100E85BB3 /* DoublePhotos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoublePhotos.png; sourceTree = "<group>"; };
+		C926AF8918EB9CA300747475 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
 		C9662C2217C1418800B4C8F4 /* Photos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Photos@2x.png"; sourceTree = "<group>"; };
 		C9D7E26A17C05056002466D5 /* PushBack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushBack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D7E26D17C05056002466D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -178,6 +180,7 @@
 				C9662C2217C1418800B4C8F4 /* Photos@2x.png */,
 				C90763C117C3134100E85BB3 /* DoublePhotos@2x.png */,
 				C90763C217C3134100E85BB3 /* DoublePhotos.png */,
+				C926AF8918EB9CA300747475 /* wallpaper.jpg */,
 				C9008CDB17C1859100A85121 /* Wallpapers */,
 				C9D7E28517C05056002466D5 /* Images.xcassets */,
 				C9D7E27417C05056002466D5 /* Supporting Files */,
@@ -309,6 +312,7 @@
 				C9D7E28117C05056002466D5 /* Main.storyboard in Resources */,
 				C9008CD117C1857F00A85121 /* Alki_Beach_Sunrise.png in Resources */,
 				C9008CB117C17DB000A85121 /* Photos.png in Resources */,
+				C926AF8A18EB9CA300747475 /* wallpaper.jpg in Resources */,
 				C9008CD417C1857F00A85121 /* Fire_Beach.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

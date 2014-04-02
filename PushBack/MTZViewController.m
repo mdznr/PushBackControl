@@ -17,6 +17,8 @@
 
 @interface MTZViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
 @end
 
 @implementation MTZViewController
@@ -28,11 +30,15 @@
 	
 	[self.view setBackgroundColor:[UIColor clearColor]];
 	[self.view setOpaque:NO];
+	self.backgroundImageView.hidden = YES;
+	
+	[self setUpMotionEffects];
 	
 	MTZPushBackButton *button = [[MTZPushBackButton alloc] init];
 	button.opaque = NO;
-//	[button setHighlightType:MTZPushBackButtonTouchHighlightTapArea];
-	[button setHighlightType:MTZPushBackButtonTouchHighlightWholeControl];
+//	button.highlightType = MTZPushBackButtonTouchHighlightNone;
+//	button.highlightType = MTZPushBackButtonTouchHighlightTapArea;
+	button.highlightType = MTZPushBackButtonTouchHighlightWholeControl;
 #warning the highlight color not masked to bounds of icon
 	[button setHighlightColor:[UIColor colorWithWhite:0.0f alpha:0.25f]];
 	[self.view addSubview:button];
@@ -60,6 +66,23 @@
 	[button setCenter:self.view.center];
 }
 
+///	Set up the motion effects for the view.
+- (void)setUpMotionEffects
+{
+	UIInterpolatingMotionEffect *horizontal = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+	horizontal.minimumRelativeValue = @(40);
+	horizontal.maximumRelativeValue = @(-40);
+	[_backgroundImageView addMotionEffect:horizontal];
+	
+	UIInterpolatingMotionEffect *vertical = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+	vertical.minimumRelativeValue = @(40);
+	vertical.maximumRelativeValue = @(-40);
+	[_backgroundImageView addMotionEffect:vertical];
+}
+
+
+#pragma mark - UIViewController Misc.
+
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
 	return UIStatusBarStyleLightContent;
@@ -73,6 +96,11 @@
 - (NSUInteger)supportedInterfaceOrientations
 {
 	return UIInterfaceOrientationPortrait;
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+	return YES;
 }
 
 - (void)didReceiveMemoryWarning

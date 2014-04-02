@@ -15,7 +15,10 @@
 
 @interface MTZPushBackButton ()
 
+///	The view containing the highlight.
 @property (strong, nonatomic) UIView *highlightView;
+
+///	The touches on the control.
 @property (strong, nonatomic) NSMutableSet *myTouches;
 
 @end
